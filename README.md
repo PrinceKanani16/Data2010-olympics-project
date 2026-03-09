@@ -50,5 +50,13 @@ The Olympic Games are not only a global competition but also a long-running data
 
 ---
 
+## Change History across Project files
+
+09/03/26 - 3pm - Josh
+1) Added plot images of RQ1 from python file: Data2010_Project.ipynb to Overleaf template with short descriptions to EDA (Number 5)
+2) Added \usepackage{xurl} to help with formatting of the template columns
+3) Added placeholder plot figures and titles for RQ2 and RQ3
+4) Added a small conclusion paragraph for EDA when completed
+
 ## Repository Structure (Suggested)
 
