@@ -13,7 +13,10 @@ This repo focuses on **data cleaning**, **missing values/outlier handling**, **f
 
 **Student:** Prince Kanani  
 **Student ID:** 8029853  
-*(Add teammate name + ID here)*
+
+**Student:** Josh Mudiwa
+**Student ID:** 7954458 
+
 
 ---
 
