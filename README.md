@@ -1,27 +1,50 @@
-# DATA 2010 Olympics Project (1896–2024)
+# DATA 2010 — Olympics Project (1896–2024)
 
 Collaborative DATA 2010 research project using an Olympics dataset (1896–2024).  
-This repo focuses on **data cleaning**, **missing values/outliers handling**, **feature engineering**, **exploratory data analysis (EDA)**, and **visualization** in Jupyter.
+This repo focuses on **data cleaning**, **missing values/outlier handling**, **feature engineering**, **exploratory data analysis (EDA)**, and **visualization** in **Jupyter Notebook**.
+
+---
+
+## Course Info
+**University of Manitoba — Winter 2026**  
+**Course:** DATA 2010 A01 – Tools and Techniques  
+**Instructor:** Lie Ding  
+**Project Weight:** 15%
+
+**Student:** Prince Kanani  
+**Student ID:** 8029853  
+*(Add teammate name + ID here)*
+
+---
+
+## Dataset
+**Kaggle:** Olympic Summer and Winter Games (1896–2024)  
+https://www.kaggle.com/datasets/magicchris/olympic-summer-and-winter-games-1896-2024
+
+**Owner on Kaggle:** Cassini-Chris (Owner)  
+**License:** Apache 2.0  
+**Provenance / citation:** Not specified on the Kaggle dataset page.  
+**Update frequency:** Not specified on the Kaggle dataset page.
+
+> Note: The raw dataset file is **not included** in this repo. Download it from Kaggle and place it in the `data/` folder.
+
+---
 
 ## Project Overview
-We analyze Olympics data to explore patterns such as:
-- Sex proportions (counts and percentages)
-- Age distribution and age-group trends
-- Top countries by medals (and countries with very few medals)
-- Countries with the most Gold/Silver/Bronze
-- Medal trends across time and events
+The Olympic Games are not only a global competition but also a long-running dataset that can reveal how representation, performance, and strategic investment in sport evolve over time. Using Olympic records spanning **1896–2024**, this project investigates patterns with real-world relevance to athlete development and national sport planning.
 
-  ### Research Questions
-  1. How has gender participation in the Olympics changed over time? (Variables: Sex + Year)
-  2. Which countries dominate Olympic medals, and has this changed over time? (Variables: Team + Year + Medal)
-  3. Do host countries win more medals when they host the Olympics? (Variables: Team + Medal + Year)
-  4. Do certain countries specialize in specific sports? (Variables: Team + Sport + Medal)
-  5. Which sports produce the most medal-winning athletes? (Variables: Sport + Medal)
-  6. How has the diversity of Olympic sports and events evolved over time? (Variables: Event + Sport + Year)
-  7. Which sports have the largest gender imbalance? (Variables: Sex + Sport)
-  8. Is Olympic success concentrated among a few countries? (winter sports in particular display this) (Variables: Team + Medal)
-  9. How has the number of participating athletes changed over time? (total number of athletes per year) (Variables: Year + num of athletes per year)
-  10. Which sports attract the most athletes? (athlete distribution across the wholedata set) (Variables: Sport + Year)
-  
+---
 
-## Repository Structure
+## Research Questions 
+1) **Age × Sex × Sport over decades**  
+   How do medal outcomes vary by age group and sex across sports, and which sports show the largest changes in gender parity and peak-age patterns across decades?
+
+2) **Country rankings + efficiency over time**  
+   How do country rankings change over time when switching from athlete-medal counts to event-medal counts, and which countries are most efficient (medals per athlete-event entry) under each method across Olympic years?
+
+3) **Sport/event medal production + specialization + stability + host effects**  
+   Which sports/events generate the most medal-winning athletes, and how do countries’ medal portfolios (specialization vs diversification) and performance stability change across Olympic editions, especially around host years where medal distribution by sport may shift?
+
+---
+
+## Repository Structure (Suggested)
