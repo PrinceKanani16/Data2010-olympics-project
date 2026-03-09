@@ -52,38 +52,3 @@ The Olympic Games are not only a global competition but also a long-running data
 
 ## Repository Structure (Suggested)
 
-*Suggested implementation of our repository*
-
-Data2010-olympics-project/
-│
-├── README.md
-├── Research Paper.pdf
-├── .gitignore
-│
-├── data/
-│   ├── raw/
-│   │   └── olympics_1896_2024.csv
-│   └── processed/
-│       └── cleaned_olympics.csv
-│
-├── notebooks/
-│   └── Data2010_Project.ipynb
-│
-├── src/
-│   ├── cleaning.py
-│   ├── analysis.py
-│   └── visualization.py
-│
-├── figures/
-│   ├── RQ1.png
-│   ├── RQ1.png
-│   ├── RQ1.png
-│   ├── RQ1.png
-│   ├── figure3.png
-│   ├── figur4.png
-│   ├── figure5.png
-│   └── figure6.png
-│
-└── report/
-    ├── project_template.tex
-    └── final_report.pdf
