@@ -58,5 +58,9 @@ The Olympic Games are not only a global competition but also a long-running data
 3) Added placeholder plot figures and titles for RQ2 and RQ3
 4) Added a small conclusion paragraph for EDA when completed
 
+12/03/26 - 6pm - Josh
+1) Replaced the graphs placed the first graph Change in Gender parity over the years
+2) 
+
 ## Repository Structure (Suggested)
 
