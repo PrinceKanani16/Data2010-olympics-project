@@ -204,11 +204,13 @@ If the notebook does not already create folders automatically, run:
 ```python
 import os
 
-os.makedirs("outputs", exist_ok=True)
-os.makedirs("RQ1_plots", exist_ok=True)
-os.makedirs("RQ2_plots", exist_ok=True)
-os.makedirs("RQ3_plots", exist_ok=True)
-os.makedirs("Appendix", exist_ok=True)
+import os
+
+os.makedirs("figures", exist_ok=True)
+os.makedirs("figures/RQ1", exist_ok=True)
+os.makedirs("figures/RQ2", exist_ok=True)
+os.makedirs("figures/RQ3", exist_ok=True)
+os.makedirs("figures/Appendix", exist_ok=True)
 ```
 
 ### 6. Check saved output paths
