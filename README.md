@@ -336,12 +336,6 @@ Larger delegations generally win more event medals, but participation size alone
 - ROC curves
 - adjusted country/team effect visualization
 
-### Main figures
-
-- Medal rate by grouped sport category and sex
-- ROC curves for logistic regression models
-- Adjusted country/team effects from logistic regression
-
 ### Main conclusion
 
 Age, sex, and sport category all matter for medal probability, but adding country/team membership improves classification performance further. This suggests that country-level advantages remain important even after athlete-level variables are included.
@@ -361,18 +355,6 @@ Age, sex, and sport category all matter for medal probability, but adding countr
 
 ### `figures/Appendix/`
 - supplementary figures such as extra diagnostics, supporting visuals, or non-core plots
-
----
-
-## Reproducibility Notes
-
-To keep the project reproducible:
-
-- run notebook cells in order;
-- keep dataset path names consistent;
-- use the same cleaned-data pipeline each time;
-- fix random seeds for train/test split or any random process;
-- make sure saved filenames match the report and folder layout.
 
 ---
 
@@ -415,12 +397,3 @@ Based on the report, the results support three practical recommendations:
 
 ---
 
-## Final Checklist Before Submission
-
-- [ ] dataset path works
-- [ ] notebook runs top to bottom without errors
-- [ ] figure paths are correct
-- [ ] saved plots are in the correct folder
-- [ ] report paths match the repository structure
-- [ ] README reflects final folder names
-- [ ] references and AI disclosure are complete
