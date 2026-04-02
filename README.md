@@ -127,12 +127,12 @@ This limitation matters especially for country-level comparisons and predictive 
 
 ### Folder purpose
 
-- `notebooks/` — main Jupyter notebook for loading, cleaning, analyzing, and plotting
-- `data/` — raw dataset file used by the notebook
-- `RQ1_plots/`, `RQ2_plots/`, `RQ3_plots/` — exported plots used in the report
-- `outputs/` — saved tables, summaries, and model outputs
-- `report/` — final report and report assets
-- `Appendix/` — supplementary figures and tables
+- `Report/` — exported final research paper PDF
+- `data/` — raw dataset used in the notebook
+- `figures/` — saved plots, organized by research question and appendix
+- `notebooks/` — main Jupyter notebook used for the full analysis
+- `.gitignore` — Git ignore rules
+- `README.md` — project overview and instructions
 
 ---
 
