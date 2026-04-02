@@ -110,24 +110,19 @@ This limitation matters especially for country-level comparisons and predictive 
 ## Repository Structure
 
 ```text
-Project/
-|
-|-- Appendix
-|-- RQ1_plots/
-|-- RQ2_plots/
-|-- RQ3_plots/
-|-- notebooks/
-|   \-- Data2010_Project.ipynb
-|
-|-- data/
-|   \-- olympics_1896_2024.csv
-|
-|-- outputs/
-|   |-- tables/
-|   \-- model_outputs/
-|
-\-- report/
-    \-- DATA2010_Project_Report.tex
+├── Report/
+│   └── Research_Paper.pdf
+├── data/
+│   └── olympics_1896_2024.csv
+├── figures/
+│   ├── Appendix/
+│   ├── RQ1/
+│   ├── RQ2/
+│   └── RQ3/
+├── notebooks/
+│   └── Data2010_Project.ipynb
+├── .gitignore
+└── README.md
 ```
 
 ### Folder purpose
