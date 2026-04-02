@@ -172,15 +172,33 @@ The project is designed to run in **Jupyter Notebook**.
 
 Clone this GitHub repository or download it as a ZIP.
 
-### 2. Make sure the dataset is in the correct folder
+### 2. Download the dataset
 
-Expected path:
+Go to the Kaggle dataset page:
 
 ```text
-data/olympics_1896_2024.csv
+https://www.kaggle.com/datasets/magicchris/olympic-summer-and-winter-games-1896-2024
 ```
 
-### 3. Open the notebook
+Download the CSV file and save it somewhere on your computer.
+
+### 3. Copy the full dataset path
+
+After downloading the CSV file, copy its full file path.
+
+Example paths:
+
+```text
+C:/Users/YourName/Downloads/olympics_1896_2024.csv
+```
+
+or
+
+```text
+C:/Users/YourName/Documents/DATA2010/data/olympics_1896_2024.csv
+```
+
+### 4. Open the notebook
 
 Open:
 
@@ -188,7 +206,25 @@ Open:
 notebooks/Data2010_Project.ipynb
 ```
 
-### 4. Run all cells in order
+### 5. Paste your dataset path into the notebook
+
+In the data-loading section of the notebook, replace the existing dataset path with the full path to your downloaded CSV file.
+
+Example:
+
+```python
+file_path = r"C:/Users/YourName/Downloads/olympics_1896_2024.csv"
+df = pd.read_csv(file_path)
+```
+
+If you moved the file into the repository `data/` folder, you can instead use:
+
+```python
+file_path = r"data/olympics_1896_2024.csv"
+df = pd.read_csv(file_path)
+```
+
+### 6. Run all notebook cells in order
 
 Run the notebook from top to bottom. This is important because later sections depend on cleaned datasets and engineered variables created earlier.
 
@@ -202,7 +238,7 @@ Examples of objects reused later include:
 - regression model objects
 - train/test split objects for logistic regression
 
-### 5. Make sure output folders exist
+### 7. Make sure output folders exist
 
 If needed, run:
 
@@ -216,7 +252,7 @@ os.makedirs("figures/RQ3", exist_ok=True)
 os.makedirs("figures/Appendix", exist_ok=True)
 ```
 
-### 6. Check saved plot paths
+### 8. Check saved plot paths
 
 Before exporting plots or committing changes, confirm that:
 
