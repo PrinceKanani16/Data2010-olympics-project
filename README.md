@@ -428,8 +428,27 @@ Based on the report, the results support three practical recommendations:
 
 ## Contributions
 
-- **Prince Kanani** — data cleaning, feature engineering, RQ1 structure, regression and logistic-regression setup, interpretation writing, and final report integration
-- **Joshua Mudiwa** — plot integration, report formatting, figure organization, review of written sections, and support on report structure and presentation
+- **Prince Kanani**: selection and refinement of the
+research questions; completed most of the data
+cleaning and feature engineering; developed
+the sport-category grouping; built and orga-
+nized the main notebook analysis; created and
+coded the visualizations; selected figures for
+the final report; carried out the regression and
+logistic-regression modeling and model compar-
+ison; wrote major parts of the notebook inter-
+pretations, conclusions, and limitations; and
+contributed to reproducibility through GitHub
+organization and template integration.
+• **Joshua Mudiwa**: defining the project overview
+and scope; supported data cleaning and coun-
+try/team grouping; helped organize figures and
+appendix exploration; contributed to the data
+source and description section; supported the
+data-analysis write-up; worked on report for-
+matting, structure, and presentation; and con-
+tributed to conclusions, limitations, next steps,
+and overall report quality.
 
 ---
 
