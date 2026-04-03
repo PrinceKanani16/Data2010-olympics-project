@@ -1,6 +1,6 @@
 # DATA 2010 — Olympics Project (1896–2024)
 
-**Trends in Olympic Athlete Performance and Representation**
+## Trends in Olympic Athlete Performance and Representation
 
 This repository contains our DATA 2010 group project on long-run Olympic participation, medal outcomes, country performance, and athlete-level medal probability using the **Olympic Summer and Winter Games (1896–2024)** dataset.
 
@@ -15,6 +15,7 @@ This repository contains our DATA 2010 group project on long-run Olympic partici
 - **Project Type:** Group project
 
 ### Authors
+
 - **Prince Kanani** — 8029853
 - **Joshua Mudiwa** — 7954458
 
@@ -22,20 +23,20 @@ This repository contains our DATA 2010 group project on long-run Olympic partici
 
 ## Project Overview
 
-The Olympic Games provide a long historical record of athlete participation and medal outcomes. This project studies how Olympic representation and success changed from **1896 to 2024**.
+The Olympic Games provide a long historical record of athlete participation and medal outcomes. This project examines how Olympic representation and success changed from **1896 to 2024**.
 
-We organize the analysis around three main research questions:
+The analysis is organized around three main research questions:
 
-1. **Research Question 1 — Age, sex, and medal outcomes**  
+1. **Research Question 1 — Age, Sex, and Medal Outcomes**  
    How do medal outcomes vary by age group and sex, and how did gender parity and typical medal-winning ages change across decades?
 
-2. **Research Question 2 — Country participation, efficiency, and dominance**  
+2. **Research Question 2 — Country Participation, Efficiency, and Dominance**  
    To what extent is country participation size associated with event-medal counts, and how does this relationship shape medal efficiency and Olympic dominance?
 
-3. **Research Question 3 — Medal probability modeling**  
+3. **Research Question 3 — Medal Probability Modeling**  
    What factors most influence an athlete’s probability of winning a medal, and to what extent does country/team membership contribute to medal probability after accounting for athlete characteristics?
 
-### Why this project matters
+### Why This Project Matters
 
 This project is useful for:
 
@@ -44,9 +45,9 @@ This project is useful for:
 - **journalists and researchers**, who study long-run Olympic trends;
 - **policy and funding stakeholders**, who care about how structure, scale, and sport specialization affect success.
 
-### High-level findings
+### High-Level Findings
 
-Across the report, the main pattern is that Olympic outcomes are shaped by both **athlete-level** and **country-level** factors:
+Across the report, the overall pattern is that Olympic outcomes are shaped by both **athlete-level** and **country-level** factors:
 
 - female participation rises strongly across decades and moves much closer to parity;
 - medal composition varies by age group and sex;
@@ -57,13 +58,13 @@ Across the report, the main pattern is that Olympic outcomes are shaped by both 
 
 ## Dataset
 
-- **Dataset name:** Olympic Summer and Winter Games (1896–2024)
+- **Dataset Name:** Olympic Summer and Winter Games (1896–2024)
 - **Source:** Kaggle
 - **Link:** https://www.kaggle.com/datasets/magicchris/olympic-summer-and-winter-games-1896-2024
 - **Owner on Kaggle:** Cassini-Chris
 - **License:** Apache License 2.0
 
-### What one row represents
+### What One Row Represents
 
 Each row represents **one athlete-event record** for one Olympic Games edition. A row may include:
 
@@ -76,7 +77,7 @@ Each row represents **one athlete-event record** for one Olympic Games edition. 
 - age
 - medal result
 
-### Basic dataset facts used in the report
+### Basic Dataset Facts Used in the Report
 
 | Item | Value |
 |---|---:|
@@ -94,7 +95,7 @@ Each row represents **one athlete-event record** for one Olympic Games edition. 
 | Sex proportion | 69.38% M / 30.62% F |
 | Exact duplicate rows removed | 0 |
 
-### Important structural note
+### Important Structural Note
 
 This dataset does **not** include a unique athlete identifier. That means:
 
@@ -106,7 +107,7 @@ This dataset does **not** include a unique athlete identifier. That means:
 
 ## Repository Structure
 
-The current repository layout should match the folders shown in GitHub:
+The repository layout should match the folders shown in GitHub:
 
 ```text
 .
@@ -125,16 +126,16 @@ The current repository layout should match the folders shown in GitHub:
 └── README.md
 ```
 
-### Folder purpose
+### Folder Purpose
 
 - `Report/` — exported final research paper PDF
 - `data/` — raw dataset used in the notebook
 - `figures/` — saved plots, organized by research question and appendix
 - `notebooks/` — main Jupyter notebook used for the full analysis
 - `.gitignore` — Git ignore rules
-- `README.md` — project overview and instructions
+- `README.md` — project overview and usage instructions
 
-### Figure folder purpose
+### Figure Folder Purpose
 
 - `figures/RQ1/` — plots used for Research Question 1
 - `figures/RQ2/` — plots used for Research Question 2
@@ -145,13 +146,13 @@ The current repository layout should match the folders shown in GitHub:
 
 ## Tools and Libraries
 
-### Required Python packages
+### Required Python Packages
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
 ```
 
-### Main libraries used
+### Main Libraries Used
 
 - `pandas`
 - `numpy`
@@ -160,7 +161,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
 - `scikit-learn`
 - `statsmodels`
 
-### Main analysis environment
+### Main Analysis Environment
 
 The project is designed to run in **Jupyter Notebook**.
 
@@ -168,11 +169,11 @@ The project is designed to run in **Jupyter Notebook**.
 
 ## How to Run the Project
 
-### 1. Clone or download the repository
+### 1. Clone or Download the Repository
 
 Clone this GitHub repository or download it as a ZIP.
 
-### 2. Download the dataset
+### 2. Download the Dataset
 
 Go to the Kaggle dataset page:
 
@@ -182,7 +183,7 @@ https://www.kaggle.com/datasets/magicchris/olympic-summer-and-winter-games-1896-
 
 Download the CSV file and save it somewhere on your computer.
 
-### 3. Copy the full dataset path
+### 3. Copy the Full Dataset Path
 
 After downloading the CSV file, copy its full file path.
 
@@ -198,7 +199,7 @@ or
 C:/Users/YourName/Documents/DATA2010/data/olympics_1896_2024.csv
 ```
 
-### 4. Open the notebook
+### 4. Open the Notebook
 
 Open:
 
@@ -206,7 +207,7 @@ Open:
 notebooks/Data2010_Project.ipynb
 ```
 
-### 5. Paste your dataset path into the notebook
+### 5. Paste Your Dataset Path into the Notebook
 
 In the data-loading section of the notebook, replace the existing dataset path with the full path to your downloaded CSV file.
 
@@ -224,7 +225,7 @@ file_path = r"data/olympics_1896_2024.csv"
 df = pd.read_csv(file_path)
 ```
 
-### 6. Run all notebook cells in order
+### 6. Run All Notebook Cells in Order
 
 Run the notebook from top to bottom. This is important because later sections depend on cleaned datasets and engineered variables created earlier.
 
@@ -238,7 +239,7 @@ Examples of objects reused later include:
 - regression model objects
 - train/test split objects for logistic regression
 
-### 7. Make sure output folders exist
+### 7. Make Sure Output Folders Exist
 
 If needed, run:
 
@@ -252,7 +253,7 @@ os.makedirs("figures/RQ3", exist_ok=True)
 os.makedirs("figures/Appendix", exist_ok=True)
 ```
 
-### 8. Check saved plot paths
+### 8. Check Saved Plot Paths
 
 Before exporting plots or committing changes, confirm that:
 
@@ -266,7 +267,7 @@ Before exporting plots or committing changes, confirm that:
 
 The project includes substantial cleaning and feature engineering before analysis.
 
-### Main cleaning steps
+### Main Cleaning Steps
 
 1. **Standardized core columns**  
    Standardized columns such as `team`, `sports`, `event`, and `medal`, and stripped extra whitespace from text fields.
@@ -292,7 +293,7 @@ The project includes substantial cleaning and feature engineering before analysi
 8. **Built country-year summaries**  
    Created aggregated country-year variables such as participation size, event-medal counts, efficiency, number of sports, and year.
 
-### Example engineered variables
+### Example Engineered Variables
 
 - `age_group`
 - `won_medal`
@@ -309,7 +310,7 @@ The project includes substantial cleaning and feature engineering before analysi
 
 **Question:** How do medal outcomes vary by age group and sex, and how did gender parity and typical medal-winning ages change across decades?
 
-### Methods used
+### Methods Used
 
 - descriptive summaries
 - grouped comparisons
@@ -317,14 +318,14 @@ The project includes substantial cleaning and feature engineering before analysi
 - decade-level share plots
 - median + IQR trend plots
 
-### Main figures
+### Main Figures
 
 - Medalist share by age group (100% stacked by sex)
 - Gender parity over time by decade
 - Largest decade-to-decade changes in female share
 - Overall peak medalist age by decade with IQR
 
-### Main conclusion
+### Main Conclusion
 
 Olympic participation becomes much more gender-balanced over time, while medalist composition and typical medal-winning ages vary across age groups and by sex.
 
@@ -334,7 +335,7 @@ Olympic participation becomes much more gender-balanced over time, while medalis
 
 **Question:** To what extent is country participation size associated with event-medal counts, and how does this relationship shape medal efficiency and Olympic dominance?
 
-### Methods used
+### Methods Used
 
 - country-year aggregation
 - scatterplots
@@ -345,7 +346,7 @@ Olympic participation becomes much more gender-balanced over time, while medalis
 - efficiency ranking
 - dominance comparisons
 
-### Main figures
+### Main Figures
 
 - Participation size vs. event medals with least-squares fit
 - Log-transformed participation size vs. event medals
@@ -353,7 +354,7 @@ Olympic participation becomes much more gender-balanced over time, while medalis
 - Top countries by medal efficiency
 - Dominance in a selected Olympic year
 
-### Main conclusion
+### Main Conclusion
 
 Larger delegations generally win more event medals, but participation size alone does not fully explain country success. Log transformation and multiple regression improve the analysis, while efficiency plots show that countries with similar participation levels can perform very differently.
 
@@ -363,7 +364,7 @@ Larger delegations generally win more event medals, but participation size alone
 
 **Question:** What factors most influence an athlete’s probability of winning a medal, and to what extent does country/team membership contribute to medal probability after accounting for athlete characteristics?
 
-### Methods used
+### Methods Used
 
 - grouped descriptive comparisons
 - athlete-level binary target construction
@@ -372,7 +373,13 @@ Larger delegations generally win more event medals, but participation size alone
 - ROC curves
 - adjusted country/team effect visualization
 
-### Main conclusion
+### Main Figures
+
+- Medal rate by grouped sport category and sex, with dominant medal-winning age-bin labels
+- ROC curves comparing the athlete-level logistic regression model
+- Country/team effects from the logistic regression model after controlling for key athlete characteristics
+
+### Main Conclusion
 
 Age, sex, and sport category all matter for medal probability, but adding country/team membership improves classification performance further. This suggests that country-level advantages remain important even after athlete-level variables are included.
 
@@ -428,27 +435,6 @@ Based on the report, the results support three practical recommendations:
 
 ## Contributions
 
-- **Prince Kanani**: selection and refinement of the
-research questions; completed most of the data
-cleaning and feature engineering; developed
-the sport-category grouping; built and orga-
-nized the main notebook analysis; created and
-coded the visualizations; selected figures for
-the final report; carried out the regression and
-logistic-regression modeling and model compar-
-ison; wrote major parts of the notebook inter-
-pretations, conclusions, and limitations; and
-contributed to reproducibility through GitHub
-organization and template integration.
-• **Joshua Mudiwa**: defining the project overview
-and scope; supported data cleaning and coun-
-try/team grouping; helped organize figures and
-appendix exploration; contributed to the data
-source and description section; supported the
-data-analysis write-up; worked on report for-
-matting, structure, and presentation; and con-
-tributed to conclusions, limitations, next steps,
-and overall report quality.
+- **Prince Kanani:** selection and refinement of the research questions; most of the data cleaning and feature engineering; development of the sport-category grouping; organization of the main notebook analysis; visualization coding; figure selection for the final report; regression and logistic-regression modeling and model comparison; notebook interpretations, conclusions, and limitations; and reproducibility through GitHub organization and template integration.
 
----
-
+- **Joshua Mudiwa:** project overview and scope definition; support with data cleaning and country/team grouping; figure organization and appendix exploration; contributions to the data source and description section; support on the data-analysis write-up; report formatting, structure, and presentation; and contributions to conclusions, limitations, next steps, and overall report quality.
